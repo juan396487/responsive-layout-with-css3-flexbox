@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 
 <head>
-<title>Allegiant Test Code</title>
 
+<title>Responsive Layout with CSS3(No Bootstrap)</title>
 
 <style>
 
+header {
+    width:100%;
+    text-align:center;
+}
+
+nav {
+    width:100%;
+}
+
 .border {
-
-border-style:solid;
-border-width:1px;
-
-}
-
-#topmast {
-width:100%;
-box-sizing:border-box;
-text-align:center;
-}
-
-#menu {
-width:100%;
-box-sizing:border-box;
+    border-style:solid;
+    border-width:1px;
 }
 
 .flex {
-display:flex;
+    display:flex;
 }
 
 .column {
-flex-direction:column;
+    flex-direction:column;
 
 }
 
 .wrap {
-flex-wrap:wrap;
+    flex-wrap:wrap;
 }
 
 .grow {
@@ -42,101 +38,70 @@ flex-wrap:wrap;
 }
 
 #menu .menuitem {
-text-align:center;
-padding:10px 0px;
+    text-align:center;
+    padding:10px 0px;
 }
 
 #additem div {
-
-width:200px;
-text-align:center;
-height:200px;
+    width:200px;
+    text-align:center;
+    height:200px;
 }
 
 #paragraph {
-
-width:500px;
-
-}
-
-#middle {
-
-    display:none;
+    width:500px;
 }
 
 @media screen and (max-width:800px) {
-
-
-#additem {
-
-flex-direction:row;
-width:100%;
+    #additem {
+        flex-direction:row;
+        width:100%;
+    }
 }
-
-.end {
-
-justify-content:flex-end;
-
-}
-
-#middle {
-
-display:block;
-
-}
-
-}
-
-
 
 </style>
-
 
 </head>
 
 
 <body>
 
-<header class='border' id='topmast'> <h1>Top Masthead</h1> </header>
+<header class='border'> <h1>Top Masthead</h1> </header>
 
 <nav class='flex' id='menu'>
         <div class='menuitem grow border'>Menu Item 1</div>
         <div class='menuitem grow border'>Menu Item 2</div>
         <div class='menuitem grow border'>Menu Item 3</div>
         <div class='menuitem grow border'>Menu Item 4</div>
-        <div class='menuitem grow border'></div>
+        <div class='menuitem grow border'>Menu Item 5</div>
 </nav>
 
 <nav class='border' id='mobilemenu'></nav>
 
-<div class='flex wrap'  id='contentwrapper'>
+<main class='flex wrap'  id='contentwrapper'>
 
+  <section class='border grow' id='paragraph'>
+        <p>In show dull give need so held. One order all scale sense her gay style wrote. Incommode our not one ourselves residence. Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities. 
+            Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out. 
+            Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no rejoiced. End friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain ten promise. No finished my an likewise cheerful packages we. For assurance concluded son something depending discourse see led collected. Packages oh no denoting my advanced humoured. Pressed be so thought natural. 
+            Those an equal point no years do. Depend warmth fat but her but played. Shy and subjects wondered trifling pleasant. Prudent cordial comfort do no on colonel as assured chicken. Smart mrs day which begin. Snug do sold mr it if such. Terminated uncommonly at at estimating. Man behaviour met moonlight extremity acuteness direction. 
+            Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and travelling. Allowance sweetness direction to as necessary. Principle oh explained excellent do my suspected conveying in. Excellent you did therefore perfectly supposing described. 
+            Endeavor bachelor but add eat pleasure doubtful sociable. Age forming covered you entered the examine. Blessing scarcely confined her contempt wondered shy. Dashwoods contented sportsmen at up no convinced cordially affection. Am so continued resembled frankness disposing engrossed dashwoods. Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve.
+        </p>
+    </section>
 
-  <div class='border grow' id='paragraph'>
-        In show dull give need so held. One order all scale sense her gay style wrote. Incommode our not one ourselves residence. Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities. 
-        Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out. 
-        Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no rejoiced. End friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain ten promise. No finished my an likewise cheerful packages we. For assurance concluded son something depending discourse see led collected. Packages oh no denoting my advanced humoured. Pressed be so thought natural. 
-        Those an equal point no years do. Depend warmth fat but her but played. Shy and subjects wondered trifling pleasant. Prudent cordial comfort do no on colonel as assured chicken. Smart mrs day which begin. Snug do sold mr it if such. Terminated uncommonly at at estimating. Man behaviour met moonlight extremity acuteness direction. 
-        Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and travelling. Allowance sweetness direction to as necessary. Principle oh explained excellent do my suspected conveying in. Excellent you did therefore perfectly supposing described. 
-        Endeavor bachelor but add eat pleasure doubtful sociable. Age forming covered you entered the examine. Blessing scarcely confined her contempt wondered shy. Dashwoods contented sportsmen at up no convinced cordially affection. Am so continued resembled frankness disposing engrossed dashwoods. Earnest greater on no observe fortune norland. Hunted mrs ham wishes stairs. Continued he as so breakfast shameless. All men drew its post knew. Of talking of calling however civilly wishing resolve. 
-  </div>
+    <aside class='flex column' id='additem'>
+        <div class='border grow'>Add Item</div>
+        <div class='border grow'>Add Item</div>
+    </aside>
 
-
-  <div class='flex column' id='additem'>
-    <div class='border grow'>Add Item</div>
-    <div class='grow' id='middle'></div> 
-    <div class='border grow end'>Add Item</div>
-  </div>
-
-
-
-</div>
+</main>
 
 
 
 
 
-    </body>
+</body>
 
 
 
