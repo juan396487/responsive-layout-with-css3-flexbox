@@ -6,4 +6,4 @@ By developing a responsive layout without an external library(like Bootstrap) sp
 In order to focus on how flexbox is implemented, the only styling that was applied was the one required to create the layout.  
 
 # Preview
-Download the index.html file. Open the file in your browser.
+https://juan396487.github.io/responsive-layout-with-css3-flexbox/
